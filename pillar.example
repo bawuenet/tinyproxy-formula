@@ -21,9 +21,9 @@ tinyproxy:
   PidFile: /var/run/tinyproxy/tinyproxy.pid
   XTinyproxy: Yes
   Upstream:
-    - testproxy:8008 ".test.domain.invalid"
-    - testproxy:8008 ".our_testbed.example.com"
-    - testproxy:8008 "192.168.128.0/255.255.254.0"
+    - "testproxy:8008 \".test.domain.invalid\""
+    - "testproxy:8008 \".our_testbed.example.com\""
+    - "testproxy:8008 \"192.168.128.0/255.255.254.0\""
   NoUpstream:
     - ".internal.example.com"
     - "www.example.com"

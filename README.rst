@@ -1,5 +1,5 @@
 =====
-tiniproxy
+tinyproxy
 =====
 
 Install the Tinyproxy proxy server.

@@ -4,32 +4,24 @@ Ubuntu:
   config: /etc/tinyproxy.conf
   service: tinyproxy
   package: tinyproxy
-  port: 8888
-  User nobody
-  Group nogroup
-  Port 8888
-  Timeout 600
-  DefaultErrorFile "/usr/share/tinyproxy/default.html"
-  StatFile "/usr/share/tinyproxy/stats.html"
-  Logfile "/var/log/tinyproxy/tinyproxy.log"
-  LogLevel Info
-  PidFile "/var/run/tinyproxy/tinyproxy.pid"
-  MaxClients 100
-  MinSpareServers 5
-  MaxSpareServers 20
-  StartServers 10
-  MaxRequestsPerChild 0
-  Allow 127.0.0.1
-  ViaProxyName "tinyproxy"
-  ConnectPort 443
-  ConnectPort 563
-Debian:
-  config: /etc/tinyproxy.conf
-  service: tinyproxy
-  package: tinyproxy
-  port: 8888
-CentOS:
-RedHat:
-Gentoo:
-FreeBSD:
+  User: nobody
+  Group: nogroup
+  Port: 8888
+  Timeout: 600
+  DefaultErrorFile: "/usr/share/tinyproxy/default.html"
+  StatFile: "/usr/share/tinyproxy/stats.html"
+  Logfile: "/var/log/tinyproxy/tinyproxy.log"
+  LogLevel: Info
+  PidFile: "/var/run/tinyproxy/tinyproxy.pid"
+  MaxClients: 100
+  MinSpareServers: 5
+  MaxSpareServers: 20
+  StartServers: 10
+  MaxRequestsPerChild: 0
+  Allow:
+    - 127.0.0.1
+  ViaProxyName: "tinyproxy"
+  ConnectPort:
+    - 443
+    - 563
 {% endload %}

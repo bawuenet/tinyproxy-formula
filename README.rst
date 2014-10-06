@@ -1,5 +1,5 @@
 =====
-mysql
+tiniproxy
 =====
 
 Install the Tinyproxy proxy server.

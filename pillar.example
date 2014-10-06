@@ -56,3 +56,9 @@ tinyproxy:
   ConnectPort:
     - 443
     - 563
+  ReversePath:
+    "/google/": "http://www.google.com/"
+    "/wired/": "http://www.wired.com/"
+  ReverseOnly: Yes
+  ReverseMagic: Yes
+  ReverseBaseURL: "http://localhost:8888/"

@@ -24,4 +24,16 @@ Ubuntu:
   ConnectPort:
     - 443
     - 563
+
+AlmaLinux:
+  config: /etc/tinyproxy/tinyproxy.conf
+  service: tinyproxy
+  package: tinyproxy
+  User: tinyproxy
+  Group: tinyproxy
+  Timeout: 600
+  DefaultErrorFile: /usr/share/tinyproxy/default.html
+  StatFile: /usr/share/tinyproxy/stats.html
+  LogLevel: Info
+  MaxClients: 100
 {% endload %}

@@ -36,4 +36,20 @@ AlmaLinux:
   StatFile: /usr/share/tinyproxy/stats.html
   LogLevel: Info
   MaxClients: 100
+
+CentOS:
+  config: /etc/tinyproxy/tinyproxy.conf
+  service: tinyproxy
+  package: tinyproxy
+  User: tinyproxy
+  Group: tinyproxy
+  Timeout: 600
+  DefaultErrorFile: /usr/share/tinyproxy/default.html
+  StatFile: /usr/share/tinyproxy/stats.html
+  LogLevel: Info
+  MaxClients: 100
+  MinSpareServers: 5
+  MaxSpareServers: 20
+  StartServers: 10
+  MaxRequestsPerChild: 0
 {% endload %}
